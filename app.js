@@ -10,7 +10,7 @@ const app = express()
 
 // Cors middleware
 const cors = require('cors')
-app.use(cors())
+//app.use(cors())
 
 // Compression middleware
 const compression = require('compression')
