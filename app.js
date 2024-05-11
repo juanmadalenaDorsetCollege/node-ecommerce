@@ -10,7 +10,11 @@ const app = express()
 
 // Cors middleware
 const cors = require('cors')
-//app.use(cors())
+const CORS_OPTIONS = {
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    origin: '*',
+}
+app.use(cors(CORS_OPTIONS))
 
 // Compression middleware
 const compression = require('compression')
